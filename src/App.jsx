@@ -2,9 +2,9 @@ import {useFormStatus} from 'react-dom';
 
 function App(){
  const handleSubmit=async()=>{
-   await new Promise(res => setTimeout(res,5000))
-   console.log("submit");
-
+   await new Promise(res => setTimeout(res,5000))                     // Promises Make Asynchronous Code Manageable
+   console.log("submit");                                             // Promises Solve Callback Hell
+                                                                      // await code ko 5 sec rok ke rakhata h
  }
  function CustomerForm(){
    const {pending}=useFormStatus();
